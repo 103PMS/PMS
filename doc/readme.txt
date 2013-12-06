@@ -9,3 +9,13 @@ MySQL Community Server 5.6.15: http://dev.mysql.com/downloads/mysql/
 
 AxureRP
 PowerDesigner 16
+
+小组成员：
+number			name		职责					github_name
+3110006338		赖卓铭			项目经理，开发，测试		JMcn
+3110006337		黄宽增			开发，产品经理
+3110006350		刘元辉			开发，DBA
+3110006341		梁耿			开发，测试
+3110006336		关伯健			开发，客户代表
+3110006339		李家宝			开发，客户代表
+3110006347		林晓辉			开发，测试
