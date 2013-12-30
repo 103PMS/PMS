@@ -1,0 +1,47 @@
+body{
+	margin:0px;
+	padding:0px;
+	}
+fieldset{
+	border:1px solid #06C;
+	width:300px;
+	}
+
+fieldset legend{
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+	color:#06F;
+	}
+	
+form{
+	margin:25px;
+	}
+#div1{
+	width:1366px;
+	height:768px;
+	background-image:url(../images/login_bg.jpg)
+	}
+	
+#div2{
+	padding:150px;
+	}
+	
+#div2 input{
+	margin-top:13px;
+	}
+	
+#code{
+	width:50px;
+	}
+#div2 a{
+	color:#000;
+	font-size:12px;
+	text-decoration:none;
+	}
+	
+.button{
+	border-radius:5px;
+	margin-left:50px;
+	}
+

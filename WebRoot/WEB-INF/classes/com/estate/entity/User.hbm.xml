@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.estate.entity.User" table="user_tb" catalog="estate">
+		
+		<id name="user_id" type="java.lang.Integer">
+		<column name="user_id"></column>
+		<generator class="identity"></generator>
+		</id>
+		
+		<property name="user_name" type="java.lang.String">
+			<column name="user_name" length="20"></column>
+		</property>
+		
+		<property name="user_gender" type="java.lang.String">
+			<column name="user_gender" length="4"></column>
+		</property>
+		
+		<property name="user_birthday" type="java.util.Date">
+			<column name="user_birthday" length="20"></column>
+		</property>
+		
+		<property name="user_phone" type="java.lang.String">
+			<column name="user_phone" length="20"></column>
+		</property>
+		
+		<property name="user_email" type="java.lang.String">
+			<column name="user_email" length="20"></column>
+		</property>
+		
+		<many-to-one name="department" class="com.estate.entity.Department">
+			<column name="depart_id"></column>
+		</many-to-one>
+		
+		<property name="user_position" type="java.lang.String">
+			<column name="user_position" length="20"></column>
+		</property>
+		
+		<set name="departments" inverse="true">
+			<key>
+			  <column name="user_id"></column>
+			</key>
+			<one-to-many class="com.estate.entity.Department"/>
+		</set>
+		
+		
+	</class>
+</hibernate-mapping>
