@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts 
+      Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+      
+<struts>
+	<package name="department" extends="struts-default">
+	
+	    <!--部门列表 -->
+		<action name="depart_list" class="com.estate.action.DepartAction" method="getDeptList">
+		<result name="success">/estate/system/depart_list.jsp</result>
+		</action>
+		
+		
+		<!-- 到添加部门页面 -->
+		<action name="to_depart_add" class="com.estate.action.DepartAction" method="toDepartAdd">
+		<result name="success">/estate/system/depart_add.jsp</result>
+		</action>
+		
+		<!-- 部门添加 -->
+		<action name="depart_add" class="com.estate.action.DepartAction" method="departSave">
+		<result name="success" type="redirectAction">depart_list</result>
+		</action>
+		
+		<!--到部门编辑页面  -->
+		<action name="depart_edit"  class="com.estate.action.DepartAction" method="findById">
+		<result name="success">/estate/system/depart_edit.jsp</result>
+		</action>
+		
+		<!-- 部门编辑后保存 -->
+		<action name="departEditSave" class="com.estate.action.DepartAction" method="departSave">
+		<result name="success" type="redirectAction">depart_list</result>
+		</action>
+	
+		
+		
+		<!-- 到部门查看页面 -->
+		<action name="depart_check"  class="com.estate.action.DepartAction" method="findById">
+		<result name="success">/estate/system/depart_check.jsp</result>
+		</action>
+		
+		<!-- 删除部门 -->
+		<action name="departDelete" class="com.estate.action.DepartAction" method="delDepart">
+		<result name="success" type="redirectAction">depart_list</result>
+		</action>
+		
+	
+	
+	
+	
+	
+	
+	</package>
+
+
+</struts>

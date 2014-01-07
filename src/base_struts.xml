@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts 
+      Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+      
+<struts>
+	<package name="base" extends="struts-default">
+	
+	
+	<action name="ammeter_list" class="com.estate.action.ammeterAction" method="ammeterList">
+	<result name="success" >/estate/baseinfor/ammeter_list.jsp</result>
+	</action>
+	
+	
+	<action name="ammeter_save" class="com.estate.action.ammeterAction"  method="ammeterSave">
+	<result name="success" type="redirectAction">ammeter_list</result>
+	</action>
+
+	
+	<action name="ammeter_edit" class="com.estate.action.ammeterAction" method="findById">
+	<result name="success">/estate/baseinfor/ammeter_edit.jsp</result>
+	</action>
+	
+	<action name="ammeterDelete" class="com.estate.action.ammeterAction"  method="ammeterDelete">
+	<result name="success" type="redirectAction">ammeter_list</result>
+	</action>
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	</package>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</struts>

@@ -1,0 +1,92 @@
+*{
+	font-size:14px;
+}
+
+body{
+	margin:35px;
+	background:#F8F8F8;
+}
+
+#div_table{
+	margin:15px 0px 0px 15px;
+}
+
+fieldset{
+	border:1px solid #88BAFF;
+	padding:15px;
+	width:70%;
+}
+
+fieldset legend{
+	font-weight:bold;
+	color:#06F;
+	border:1px solid #88B8FF;
+	padding:5px;
+}
+
+#div_table div{
+	text-align:right;
+	margin:-20px 37px 20px 0px;
+	padding-top:20px;
+}
+
+.add_btn{
+	background:#FF9;
+	font-weight:bold;
+	border:1px solid #03C;
+	text-decoration:none;
+	padding:2px 3px;
+	color:#06F;
+}
+
+table{
+	width:95%;
+	margin:10px;
+	
+}
+
+table,th,td{
+	border:1px solid #88B8FF;
+	border-collapse:collapse;
+	text-align:center;
+	height:25px;
+	line-height:25px;
+}
+
+#t_foot{
+	text-align:left;
+	padding-left:10px;
+	}
+	
+#t_last{
+	text-align:right;
+	padding-right:10px;
+}
+
+.like_btn{
+	text-decoration:none;
+	border-bottom:1px solid #aaa;
+	border-right:1px solid #aaa;
+	background:#FF9;
+	color:#06F;
+	padding:2px;
+}
+
+
+.search{
+	clear:both;
+	float:left;
+	padding-left:10px;
+	
+}
+
+.search input{
+	margin-left:10px;
+}
+
+a{
+	text-decoration:none;
+}
+a:hover{color:#F00;}
+
+
